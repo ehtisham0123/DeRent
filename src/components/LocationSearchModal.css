@@ -1,0 +1,45 @@
+.search {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 10;
+}
+.search_result {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  z-index: 10000;
+}
+
+.search input {
+  padding: 0.2rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.locate {
+  position: absolute;
+  bottom: 13rem;
+  right: 1.7rem;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+.locate img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.map_select{
+  background: #fff;
+  color: #000;
+}
+.map_select:focus{   
+  background-color: rgba(0,0,0,1);
+  color: #fff;
+}
+    
+  

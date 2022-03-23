@@ -1,0 +1,454 @@
+
+
+/* --------------------------------------------------------------------*/
+/* --------------------------------------------------------------------*/
+/* ------------------------ MY Styling --------------------------------*/
+/* --------------------------------------------------------------------*/
+/* --------------------------------------------------------------------*/
+/* --------------------------------------------------------------------*/
+
+body,.card *{
+  background: aliceblue;
+  color: #000;
+}
+.btn{
+  border: 1px solid #000;
+}
+      .home-border {
+        border-radius: 14px;
+        margin-left: -10px;
+        border: 1px solid black;
+        background-color: aliceblue;
+        z-index: 1000;
+      }
+      .home-serv {
+        margin-top: 2.1em;
+        width: 350px;
+        padding: 20px 10px;
+        border: 1px solid black;
+      }
+      .homeserv-border {
+        border-radius: 10px;
+      }
+
+      .home-bg {
+        transform: rotate(45deg);
+      }
+      .home-body {
+        transform: rotate(-45deg);
+        border: 1px solid black;
+        margin: 35px;
+      
+      
+      }
+      .home-body-border {
+        border-radius: 14px;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .home-border {
+          animation: home-border infinite 20s linear;
+        }
+      }
+
+      @keyframes home-border {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+table{
+  border: 1px solid #000;
+   border-radius: 15px;
+   padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: cursive;
+  color: #000;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 300px;
+  max-width: 300px;
+  background: #000;
+  -webkit-transitions: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  min-height: 100vh;
+  border-right: 2px solid gray;
+}
+
+#sidebar.active {
+  margin-left: -300px;
+}
+#sidebar.active .custom-menu {
+  margin-right: -50px;
+}
+#sidebar.active .btn.btn-primary:before {
+  content: "\f054";
+  font-family: "FontAwesome";
+  left: 2px !important;
+}
+#sidebar.active .btn.btn-primary:after {
+  display: none;
+}
+#sidebar h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  color: aliceblue;
+}
+#sidebar h3 .logo {
+  color: aliceblue;
+  display: block;
+  padding: 10px 30px;
+  background:  #000;
+
+}
+#sidebar ul.components {
+  padding: 0;
+}
+#sidebar ul li {
+  font-size: 16px;
+}
+#sidebar ul li > ul {
+  margin-left: 10px;
+}
+#sidebar ul li > ul li {
+  font-size: 14px;
+}
+#sidebar ul li a {
+  font-weight: bold;
+  padding: 15px 30px;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+#sidebar ul li a span.notif {
+  position: relative;
+}
+
+#sidebar ul li a:hover {
+  color: aliceblue;
+  border: 1px solid aliceblue;
+}
+#sidebar ul li.active > a {
+  background-color: rgba(0,0,0,0.1);
+  color: aliceblue;
+}
+/*#sidebar ul li.active > a:hover {
+  background: #5cb85c;
+  border-bottom: 1px solid #5cb85c;
+}*/
+@media (max-width: 991.98px) {
+  #sidebar {
+    margin-left: -300px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebar .custom-menu {
+    margin-right: -60px !important;
+    top: 10px !important;
+  }
+}
+#sidebar .custom-menu {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: -35px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (prefers-reduced-motion: reduce) {
+  #sidebar .custom-menu {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+#sidebar .custom-menu .btn.btn-primary {
+  background: aliceblue;
+  border: 2px solid #000;
+  position: relative;
+  color: aliceblue;
+  width: 30px;
+  height: 30px;
+}
+#sidebar .custom-menu .btn.btn-primary:after,
+#sidebar .custom-menu .btn.btn-primary:before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "FontAwesome";
+  color: #000;
+}
+#sidebar .custom-menu .btn.btn-primary:after {
+  content: "\f053";
+  right: 2px;
+}
+
+.bg-wrap {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.bg-wrap:after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: #000;
+  opacity: 0.3;
+}
+.bg-wrap .user-logo .img {
+  margin: 15px auto;
+}
+.bg-wrap .user-logo h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.modal-full {
+    min-width: 100%;
+}
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+
+.loading{
+  width:100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.loader { 
+  height: 70px;
+  width: 70px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+    animation: loader-spin infinite 20s linear;
+  }
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.login-container{
+    margin-top: 10vh;
+}
+.login-form{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    height: 80vh;
+}
+.login-form h2{
+    text-align: center;
+    color: #000;
+}
+.login-container form{
+    justify-content: center;
+    padding: 10%;
+    font-family: cursive;
+
+}
+
+
+
+.profile-img {
+  text-align: center;
+}
+.profile-img img {
+  width: 70%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 4px 8px 32px 0px gray;
+}
+.profile-img img:hover {
+  opacity: 0.9;
+}
+ .nav-tabs .nav-link {
+  font-weight: 600;
+  border: none;
+}
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid green;
+}
+
+.profile-tab p {
+  font-weight: 600;
+  color: #000;
+}
+.headings {
+  font-size: 15px;
+}
+/*
+.inforide {
+  box-shadow: 4px 8px 32px 0px gray;
+  background-color: aliceblue;
+  border-radius: 8px;
+  height: 150px;
+}
+.ride {
+  padding-top: 35px;
+  border-radius: 8px 0px 0px 8px;
+  text-align: center;
+  height: 150px;
+  margin-left: 15px;
+}
+
+.fontsty {
+  margin-right: -15px;
+}
+.fontsty h2{
+  color: #6E6E6E;
+  font-size: 35px;
+  margin-top: 15px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.fontsty h4{
+  color: #6E6E6E;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 30px;
+}*/
+
+ .search_bar{
+      border-radius:15px;
+      border:1px solid #000;
+        background-color: aliceblue;
+      
+      color:black;
+    }
+    .search_bar:focus{
+      box-shadow:none;
+      border:1px solid #000;
+        background-color: aliceblue;
+      
+      color: #000;
+      outline:0px;
+    }
+
+    .select{
+      background: aliceblue;
+      color: #000;
+    }
+    .select:focus{   
+        background-color: aliceblue;
+        color: #000;
+      }
+
+
+ .input{
+      border-radius:15px;
+      background-color: aliceblue;
+      border:1px solid #000;
+      color:#000;
+    }
+    .input:focus{
+      box-shadow:none;
+      border:1px solid #000;
+      background-color: aliceblue;
+      color: #000;
+      outline:0px;
+    }
+
+
+.pagination .page-item{
+  color: black;
+  background: aliceblue;
+  border: 1px solid black;
+}
+/*.pagination .page-link{
+  color: black;
+  background: aliceblue;
+}
+*/
+.pagination .active .page-link{
+  color: aliceblue;
+  background: #000;
+}
+
+.pagination .active .page-link:hover{
+  color: aliceblue;
+  background: #000;
+}
